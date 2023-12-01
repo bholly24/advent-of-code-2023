@@ -1,19 +1,9 @@
 package starter
 
 import (
+	"aoc/utilities"
 	"fmt"
-	"os"
-	"strings"
 )
-
-func ReadInLines(file string) []string {
-	content, err := os.ReadFile(file)
-	if err != nil {
-		fmt.Printf("Error: %s", err)
-	}
-	lines := strings.Split(string(content), "\n")
-	return lines
-}
 
 func GetRockPaperAnswers(input []string) int {
 	score := 0
@@ -24,7 +14,7 @@ func GetRockPaperAnswers(input []string) int {
 }
 
 func PartOneAnswer() {
-	test := ReadInLines("./starter/input.txt")
+	test := utilities.ReadInLines("./starter/input.txt")
 	fmt.Printf("Here is score %d\n", GetRockPaperAnswers(test))
 }
 

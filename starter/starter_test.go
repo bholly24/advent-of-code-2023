@@ -2,7 +2,7 @@ package starter
 
 import "testing"
 
-func TestMyLife(t *testing.T) {
+func TestGetRockPaperAnswers(t *testing.T) {
 	sampleInput := []string{
 		"A Y", "B X", "C Z",
 	}
